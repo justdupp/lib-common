@@ -8,7 +8,10 @@ import java.time.temporal.ChronoField;
 import java.time.temporal.ChronoUnit;
 import java.time.temporal.Temporal;
 import java.time.temporal.TemporalAdjuster;
+import java.util.List;
 import java.util.Locale;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 /**
  * @Auther xuhoujun
@@ -36,6 +39,7 @@ public class DateUtils {
      //   System.out.println(getMonthNumDate(1,"2018-01-30"));
         // System.out.println(getDayNumDate(1,LocalDate.now()));
         //  System.out.println(getDayNumDate(1,"2018-02-21"));
+        System.out.println(collectLocalDates("2018-01-01","2018-02-28"));
     }
 
     /**
@@ -123,6 +127,29 @@ public class DateUtils {
             }
             return temporal.plus(dayToAdd, ChronoUnit.DAYS);
         }
+    }
+
+    /**
+     * 收集起始日期到结束日期之间所有的日期并以字符串集合方式返回
+     * @param timeStart
+     * @param timeEnd
+     * @return
+     */
+    public static List<String> collectLocalDates(String timeStart, String timeEnd){
+        return collectLocalDates(LocalDate.parse(timeStart), LocalDate.parse(timeEnd));
+    }
+
+    /**
+     * 收集起始日期到结束日期之间所有的日期并以字符串集合方式返回
+     * @param start
+     * @param end
+     * @return List<String>  年月日格式的集合
+     */
+    public static List<String> collectLocalDates(LocalDate start, LocalDate end){
+        return Stream.iterate(start, localDate -> localDate.plusDays(1))
+                .limit(ChronoUnit.DAYS.between(start, end) + 1)
+                .map(LocalDate::toString)
+                .collect(Collectors.toList());
     }
 
 }
