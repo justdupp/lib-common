@@ -1,13 +1,13 @@
 package com.hecc.lib.common;
 
 
-import java.time.DayOfWeek;
-import java.time.LocalDate;
+import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoField;
 import java.time.temporal.ChronoUnit;
 import java.time.temporal.Temporal;
 import java.time.temporal.TemporalAdjuster;
+import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 import java.util.stream.Collectors;
@@ -26,6 +26,7 @@ public class DateUtils {
 
     public static final String FORMATTER_PATTERN_WITH_MIDDLE_LINE = "yyyy-MM-dd";
     public static final String FORMATTER_PATTERN_WITH_BACK_SLANT = "yyyy/MM/dd";
+    public static final String TIME_PATTERN = "yyyy-MM-dd HH:mm:ss";
 
     public static void main(String[] args) {
         //useDateFormatter();
@@ -150,6 +151,128 @@ public class DateUtils {
                 .limit(ChronoUnit.DAYS.between(start, end) + 1)
                 .map(LocalDate::toString)
                 .collect(Collectors.toList());
+    }
+
+
+    /**
+     *  LocalDateTime转自定义String
+     * @param localDateTime
+     * @param format 比如 yyyy-MM-dd hh:mm:ss
+     * @return
+     */
+    public static String localDateTimeToString(LocalDateTime localDateTime, String format){
+        try {
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern(format);
+            return localDateTime.format(formatter);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return "";
+    }
+
+    /**
+     * string 转LocalDateTime
+     * @param dateStr   源字符串  比如： "2018-02-28 01:00:00"
+     * @param format    转换模式  比如   "yyyy-MM-dd HH:mm:ss"
+     * @return
+     */
+    public static LocalDateTime stringToLocalDateTime(String dateStr,String format){
+        try {
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern(format);
+            return LocalDateTime.parse(dateStr,formatter);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    /**
+     *  根据时间获取当前月份的天数
+     * @param date
+     * @return
+     */
+    public static int getActualMaximum(Date date){
+        return dateToLocalDateTime(date).getMonth().length(dateToLocalDate(date).isLeapYear());
+    }
+
+    /**
+     * 根据日期获得星期
+     * @param date
+     * @return 1:星期一；2:星期二；3:星期三；4:星期四；5:星期五；6:星期六；7:星期日；
+     */
+    public static int getWeekOfDate(Date date) {
+        return dateToLocalDateTime(date).getDayOfWeek().getValue();
+    }
+
+    /**
+     * Date 转 LocalDateTime
+     * @param date
+     * @return LocalDateTime
+     */
+    public static LocalDateTime dateToLocalDateTime(Date date) {
+        Instant instant = date.toInstant();
+        ZoneId zoneId = ZoneId.systemDefault();
+        return LocalDateTime.ofInstant(instant, zoneId);
+    }
+
+    /**
+     * 计算两个日期LocalDate相差的天数，不考虑日期前后，返回结果>=0
+     * @param before
+     * @param after
+     * @return
+     */
+    public static int getAbsDateDiffDay(LocalDate before, LocalDate after) {
+        return Math.abs(Period.between(before, after).getDays());
+    }
+
+    /**
+     * Date 转 LocalDateTime
+     * @param date
+     * @return LocalDate
+     */
+    public static LocalDate dateToLocalDate(Date date) {
+        return dateToLocalDateTime(date).toLocalDate();
+    }
+
+    /**
+     * 获取指定日期的当月的月份数
+     * @param date
+     * @return
+     */
+    public static int getLastMonth(Date date) {
+        return dateToLocalDateTime(date).getMonth().getValue();
+
+    }
+
+    /**
+     * 特定日期的当月第一天
+     * @param date
+     * @return
+     */
+    public static LocalDate newThisMonth(Date date) {
+        LocalDate localDate = dateToLocalDate(date);
+        return LocalDate.of(localDate.getYear(), localDate.getMonth(), 1);
+    }
+
+    /**
+     * 特定日期的当月最后一天
+     * @param date
+     * @return
+     */
+    public static LocalDate lastThisMonth(Date date) {
+        int lastDay = getActualMaximum(date);
+        LocalDate localDate = dateToLocalDate(date);
+        return LocalDate.of(localDate.getYear(), localDate.getMonth(), lastDay);
+    }
+
+    /**
+     * date 转转自定义String
+     * @param date  new Date()
+     * @param pattern  例 yyyy-MM-dd hh:mm:ss
+     * @return
+     */
+    public static String dateToString(Date date,String pattern){
+        return localDateTimeToString(dateToLocalDateTime(date),pattern);
     }
 
 }
