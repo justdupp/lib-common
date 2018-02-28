@@ -190,7 +190,7 @@ public class ListPageModel {
     }
 
     public static void main(String args[]) {
-        List<String> list = new ArrayList<>();
+        List<String> list = new ArrayList<String>();
         for(int i= 1;i<15;i++){
             list.add(i+"");
         }
