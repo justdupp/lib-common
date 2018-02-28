@@ -13,28 +13,28 @@ public class ObjectUtils {
 
     /**
      * 比较两个bean对象的字段名称和值是否相等
-     * @param source
-     * @param target
+     * @param source  目标对象
+     * @param target  源对象
      * @return
      */
     public static boolean fieldNameAndValueEquals(Object source, Object target) {
         if (source == null || target == null) {
             return false;
         }
-        boolean rv = true;
-        rv = resultOfEquals(source, target, rv);
-        System.out.println("对比结果为 " + rv);
-        return rv;
+        boolean result = true;
+        result = resultOfEquals(source, target, result);
+        System.out.println("对比结果为 " + result);
+        return result;
     }
 
     /**
      * 获取对比结果
      * @param source   源目标
      * @param target   对比目标
-     * @param rv  对比结果
+     * @param result  对比结果
      * @return
      */
-    private static boolean resultOfEquals(Object source, Object target, boolean rv) {
+    private static boolean resultOfEquals(Object source, Object target, boolean result) {
         Class<?> sourceClass = source.getClass();
         Field[] fields = sourceClass.getDeclaredFields();
         for (Field field : fields) {
@@ -44,11 +44,11 @@ public class ObjectUtils {
             String targetValue = getClassValue(target, fieldName) == null ? "" : getClassValue(target, fieldName)
                     .toString();
             if (!sourceValue.equals(targetValue)) {
-                rv = false;
+                result = false;
                 break;
             }
         }
-        return rv;
+        return result;
     }
 
     /**
@@ -75,7 +75,7 @@ public class ObjectUtils {
                 try {
                     objValue = methods[i].invoke(obj, new Object[] {});
                 } catch (Exception e) {
-                    System.out.println("反射取值出错：" + e.toString());
+                    System.out.println("反射取值出错：" + e);
                     continue;
                 }
                 if (objValue == null) {
