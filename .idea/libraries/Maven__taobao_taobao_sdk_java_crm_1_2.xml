@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: taobao:taobao-sdk-java-crm:1.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Public/repository/taobao/taobao-sdk-java-crm/1.2/taobao-sdk-java-crm-1.2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/Public/repository/taobao/taobao-sdk-java-crm/1.2/taobao-sdk-java-crm-1.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/Public/repository/taobao/taobao-sdk-java-crm/1.2/taobao-sdk-java-crm-1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
