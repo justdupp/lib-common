@@ -1,6 +1,8 @@
 package com.hecc.lib.algorithm;
 
 import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Stack;
 
 /**
  * @Auther xuhoujun
@@ -28,42 +30,106 @@ public class BinaryTree<T> {
     }
 
     /**
-     * 先序遍历二叉树
+     * 先序遍历迭代
      *
      * @param root
      */
-    public void PrintBinaryTreePreRecur(TreeNode<T> root) {
-        if (root != null) {
-            System.out.print(root.data);
-            PrintBinaryTreePreRecur(root.left);
-            PrintBinaryTreePreRecur(root.right);
+    public void printBinaryTreePre(TreeNode<T> root) {
+        if (root == null) {
+            return;
+        }
+        Stack<TreeNode> nodeStack = new Stack<>();
+        nodeStack.push(root);
+        while (!nodeStack.isEmpty()) {
+            TreeNode treeNode = nodeStack.pop();
+            System.out.print(treeNode.data);
+            if (treeNode.right != null) {
+                nodeStack.push(treeNode.right);
+            }
+            if (treeNode.left != null) {
+                nodeStack.push(treeNode.left);
+            }
         }
     }
 
     /**
-     * 中序遍历二叉树
+     * 先序遍历二叉树--递归
      *
      * @param root
      */
-    public void PrintBinaryTreeMidRecur(TreeNode<T> root) {
+    public void printBinaryTreePreRecur(TreeNode<T> root) {
         if (root != null) {
-            PrintBinaryTreeMidRecur(root.left);
             System.out.print(root.data);
-            PrintBinaryTreeMidRecur(root.right);
+            printBinaryTreePreRecur(root.left);
+            printBinaryTreePreRecur(root.right);
         }
     }
 
     /**
-     * 后序遍历二叉树
+     * 中序遍历二叉树--递归
      *
      * @param root
      */
-    public void PrintBinaryTreeBacRecur(TreeNode<T> root) {
+    public void printBinaryTreeMidRecur(TreeNode<T> root) {
         if (root != null) {
-            PrintBinaryTreeBacRecur(root.left);
-            PrintBinaryTreeBacRecur(root.right);
+            printBinaryTreeMidRecur(root.left);
+            System.out.print(root.data);
+            printBinaryTreeMidRecur(root.right);
+        }
+    }
+
+    /**
+     * 后序遍历二叉树--递归
+     *
+     * @param root
+     */
+    public void printBinaryTreeBacRecur(TreeNode<T> root) {
+        if (root != null) {
+            printBinaryTreeBacRecur(root.left);
+            printBinaryTreeBacRecur(root.right);
             System.out.print(root.data);
         }
+    }
+
+    /**
+     * 获取二叉树中节点个数-- 递归
+     *
+     * @param root
+     * @return
+     */
+    public int getNodeCountRec(TreeNode<T> root) {
+        if (root != null) {
+            return getNodeCountRec(root.left) + getNodeCountRec(root.right) + 1;
+        } else {
+            return 0;
+        }
+    }
+
+    /**
+     * 获取二叉树中节点个数
+     *
+     * @param root
+     * @return
+     */
+    public int getNodeCount(TreeNode<T> root) {
+        if (root == null) {
+            return 0;
+        }
+        int nodeCount = 1;
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
+        while (!queue.isEmpty()) {
+            TreeNode treeNode = queue.remove();
+            if (treeNode.left != null) {
+                queue.add(treeNode.left);
+                nodeCount++;
+            }
+            if (treeNode.right != null) {
+                queue.add(treeNode.right);
+                nodeCount++;
+            }
+        }
+        return nodeCount;
     }
 
     public static void main(String[] args) {
@@ -103,15 +169,15 @@ public class BinaryTree<T> {
 
         //先序遍历（递归）
         System.out.println("先序遍历");
-        binaryTree.PrintBinaryTreePreRecur(root);
+        binaryTree.printBinaryTreePreRecur(root);
         System.out.println();
         //中序遍历（递归）
         System.out.println("中序遍历");
-        binaryTree.PrintBinaryTreeMidRecur(root);
+        binaryTree.printBinaryTreeMidRecur(root);
         System.out.println();
         //后序遍历（递归）
         System.out.println("后序遍历");
-        binaryTree.PrintBinaryTreeBacRecur(root);
+        binaryTree.printBinaryTreeBacRecur(root);
         System.out.println();
     }
 }
