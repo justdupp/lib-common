@@ -6,7 +6,7 @@ import java.util.Stack;
 
 /**
  * @Auther xuhoujun
- * @Description: 二叉树
+ * @Description: 二叉树工具类
  * @Date: Created In 下午10:20 on 2018/4/12.
  */
 public class BinaryTree<T> {
@@ -55,7 +55,7 @@ public class BinaryTree<T> {
     /**
      * 先序遍历二叉树--递归
      *
-     * @param root
+     * @param root 二叉树
      */
     public void printBinaryTreePreRecur(TreeNode<T> root) {
         if (root != null) {
@@ -68,7 +68,7 @@ public class BinaryTree<T> {
     /**
      * 中序遍历二叉树--递归
      *
-     * @param root
+     * @param root 二叉树
      */
     public void printBinaryTreeMidRecur(TreeNode<T> root) {
         if (root != null) {
@@ -81,7 +81,7 @@ public class BinaryTree<T> {
     /**
      * 后序遍历二叉树--递归
      *
-     * @param root
+     * @param root 二叉树
      */
     public void printBinaryTreeBacRecur(TreeNode<T> root) {
         if (root != null) {
@@ -94,8 +94,8 @@ public class BinaryTree<T> {
     /**
      * 获取二叉树中节点个数-- 递归
      *
-     * @param root
-     * @return
+     * @param root 二叉树
+     * @return 节点个数
      */
     public int getNodeCountRec(TreeNode<T> root) {
         if (root != null) {
@@ -108,8 +108,8 @@ public class BinaryTree<T> {
     /**
      * 获取二叉树中节点个数
      *
-     * @param root
-     * @return
+     * @param root 二叉树
+     * @return 节点个数
      */
     public int getNodeCount(TreeNode<T> root) {
         if (root == null) {
@@ -131,6 +131,55 @@ public class BinaryTree<T> {
         }
         return nodeCount;
     }
+
+    /**
+     * 递归的方式获取二叉树的深度
+     * @param root 二叉树
+     * @return
+     */
+    public int getDepthRec(TreeNode<T> root){
+        if(root == null){
+            return 0;
+        }
+        int leftDepth = getDepthRec(root.left);
+        int rightDepth = getDepthRec(root.right);
+        return Math.max(leftDepth,rightDepth)+1;
+    }
+
+    /**
+     * 获取二叉树的深度
+     * @param root
+     * @return
+     */
+    public int getDepth(TreeNode<T> root){
+        if(root == null){
+            return 0;
+        }
+        int depth = 0;
+        int currentLevel = 1;
+        int nextLevel = 0;
+        LinkedList<TreeNode> treeNodeLinkedList = new LinkedList<>();
+        treeNodeLinkedList.add(root);
+        while(!treeNodeLinkedList.isEmpty()){
+            TreeNode treeNode = treeNodeLinkedList.remove();
+            currentLevel--;
+            if(treeNode.left != null){
+                treeNodeLinkedList.add(treeNode.left);
+                nextLevel++;
+            }
+            if(treeNode.right != null){
+                treeNodeLinkedList.add(treeNode.right);
+                nextLevel++;
+            }
+            if(currentLevel == 0){
+                depth++;
+                currentLevel = nextLevel;
+                nextLevel = 0;
+            }
+        }
+        return depth;
+    }
+
 
     public static void main(String[] args) {
       /*   BinaryTree<Character> binaryTree=new BinaryTree<>();
@@ -166,6 +215,9 @@ public class BinaryTree<T> {
         tree.add(null);
 
         TreeNode<Integer> root = binaryTree.createBinaryPre(tree);
+        System.out.println("获取二叉树深度");
+        System.out.println("递归获取 ： "+ binaryTree.getDepthRec(root));
+        System.out.println("非递归获取 ： "+ binaryTree.getDepth(root));
 
         //先序遍历（递归）
         System.out.println("先序遍历");
