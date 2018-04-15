@@ -3,9 +3,9 @@ package com.hecc.lib.io;
 import java.io.*;
 
 /**
- * @Auther xuhoujun
- * @Description: 序列化工具类
- * @Date: Created In 下午10:28 on 2018/4/12.
+ * @author xuhoujun
+ * @description: 序列化工具类
+ * @date: Created In 下午10:28 on 2018/4/12.
  */
 public class SerializeUtil {
 

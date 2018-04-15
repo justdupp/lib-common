@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @Auther xuhoujun
- * @Description: 列表分页
- * @Date: Created In 下午10:06 on 2018/2/27.
+ * @author xuhoujun
+ * @description: 列表分页
+ * @date: Created In 下午10:06 on 2018/2/27.
  */
 public class ListPageModel {
 

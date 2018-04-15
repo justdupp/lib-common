@@ -1,9 +1,9 @@
 package com.hecc.lib.algorithm;
 
 /**
- * @Auther xuhoujun
- * @Description: 节点树
- * @Date: Created In 下午10:21 on 2018/4/12.
+ * @author xuhoujun
+ * @description: 节点树
+ * @date: Created In 下午10:21 on 2018/4/12.
  */
 public class TreeNode<T> {
 

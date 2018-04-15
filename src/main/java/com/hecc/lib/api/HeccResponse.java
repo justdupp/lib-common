@@ -6,9 +6,9 @@ import java.io.Serializable;
 import java.util.Map;
 
 /**
- * @Auther xuhoujun
- * @Description: 接口响应封装
- * @Date: Created In 下午2:17 on 2018/3/31.
+ * @author xuhoujun
+ * @description: 接口响应封装
+ * @date: Created In 下午2:17 on 2018/3/31.
  */
 public class HeccResponse implements Serializable {
 

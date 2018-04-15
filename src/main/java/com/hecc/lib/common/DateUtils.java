@@ -14,9 +14,9 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
- * @Auther xuhoujun
- * @Description:  日期工具类
- * @Date: Created In 下午9:36 on 2018/2/26.
+ * @author xuhoujun
+ * @description:  日期工具类
+ * @date: Created In 下午9:36 on 2018/2/26.
  */
 public class DateUtils {
 

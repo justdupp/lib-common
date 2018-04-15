@@ -8,9 +8,9 @@ import org.slf4j.LoggerFactory;
 import java.util.Map;
 
 /**
- * @Auther xuhoujun
- * @Description: 接口请求封装
- * @Date: Created In 下午2:09 on 2018/3/31.
+ * @author xuhoujun
+ * @description: 接口请求封装
+ * @date: Created In 下午2:09 on 2018/3/31.
  */
 public abstract class HeccRequest<T extends HeccResponse> {
 

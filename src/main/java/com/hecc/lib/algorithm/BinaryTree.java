@@ -5,9 +5,9 @@ import java.util.Queue;
 import java.util.Stack;
 
 /**
- * @Auther xuhoujun
- * @Description: 二叉树工具类
- * @Date: Created In 下午10:20 on 2018/4/12.
+ * @author xuhoujun
+ * @description: 二叉树工具类
+ * @date: Created In 下午10:20 on 2018/4/12.
  */
 public class BinaryTree<T> {
 

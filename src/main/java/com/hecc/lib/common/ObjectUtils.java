@@ -5,9 +5,9 @@ import java.lang.reflect.Method;
 
 
 /**
- * @Auther xuhoujun
- * @Description:   对象工具类
- * @Date: Created In 下午8:17 on 2018/2/28.
+ * @author xuhoujun
+ * @description:   对象工具类
+ * @date: Created In 下午8:17 on 2018/2/28.
  */
 public class ObjectUtils {
 
