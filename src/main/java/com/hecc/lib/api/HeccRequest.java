@@ -1,7 +1,6 @@
 package com.hecc.lib.api;
 
 import com.alibaba.fastjson.JSON;
-import com.taobao.api.internal.util.WebUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -38,7 +37,8 @@ public abstract class HeccRequest<T extends HeccResponse> {
     }
 
     private String getResponseString() {
-        Map<String, String> params = getTextParams();
+        return "";
+      /*  Map<String, String> params = getTextParams();
         String apiName = getApiName();
         try {
             return WebUtils.doGet(HECC_URL + apiName, params);
@@ -50,6 +50,6 @@ public abstract class HeccRequest<T extends HeccResponse> {
                     "  \"description\": \"hecc api invoke error\",\n" +
                     "  \"description_cn\": \"请求失败,请稍等重试\"\n" +
                     "}";
-        }
+        }*/
     }
 }
