@@ -6,15 +6,16 @@ import java.lang.reflect.Method;
 
 /**
  * @author xuhoujun
- * @description:   对象工具类
+ * @description: 对象工具类
  * @date: Created In 下午8:17 on 2018/2/28.
  */
 public class ObjectUtils {
 
     /**
      * 比较两个bean对象的字段名称和值是否相等
-     * @param source  目标对象
-     * @param target  源对象
+     *
+     * @param source 目标对象
+     * @param target 源对象
      * @return
      */
     public static boolean fieldNameAndValueEquals(Object source, Object target) {
@@ -29,9 +30,10 @@ public class ObjectUtils {
 
     /**
      * 获取对比结果
-     * @param source   源目标
-     * @param target   对比目标
-     * @param result  对比结果
+     *
+     * @param source 源目标
+     * @param target 对比目标
+     * @param result 对比结果
      * @return
      */
     private static boolean resultOfEquals(Object source, Object target, boolean result) {
@@ -53,8 +55,9 @@ public class ObjectUtils {
 
     /**
      * 根据字段名称取值
-     * @param obj          对象
-     * @param fieldName    字段
+     *
+     * @param obj       对象
+     * @param fieldName 字段
      * @return object
      */
     public static Object getClassValue(Object obj, String fieldName) {
@@ -71,9 +74,9 @@ public class ObjectUtils {
                 if (!methods[i].getName().startsWith("get")) {
                     continue;
                 }
-                Object objValue ;
+                Object objValue;
                 try {
-                    objValue = methods[i].invoke(obj, new Object[] {});
+                    objValue = methods[i].invoke(obj, new Object[]{});
                 } catch (Exception e) {
                     System.out.println("反射取值出错：" + e);
                     continue;
@@ -100,16 +103,16 @@ public class ObjectUtils {
     /**
      * 安全类型转换。
      *
-     * @param source  源类型实例。
-     * @param target  目标类。
-     * @param <T>     目标类型。
+     * @param source 源类型实例。
+     * @param target 目标类。
+     * @param <T>    目标类型。
      * @return 如成功，则源类型转换为目标类型，否则返回“null”。
      */
     public static <T> T safeCast(Object source, Class<T> target) {
         if (source == null) {
             return null;
         }
-        if (target.isInstance(source)){
+        if (target.isInstance(source)) {
             return target.cast(source);
         }
         return null;

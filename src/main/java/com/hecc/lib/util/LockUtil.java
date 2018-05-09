@@ -67,7 +67,7 @@ public class LockUtil {
      * @return 返回值
      */
     public static <TResult> TResult withWriteLock(Supplier<StampedLock> obtainLock,
-            Supplier<? extends TResult> writeStatement) {
+                                                  Supplier<? extends TResult> writeStatement) {
         if (obtainLock == null || writeStatement == null) {
             throw new NullPointerException();
         }

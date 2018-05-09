@@ -134,25 +134,27 @@ public class BinaryTree<T> {
 
     /**
      * 递归的方式获取二叉树的深度
+     *
      * @param root 二叉树
      * @return
      */
-    public int getDepthRec(TreeNode<T> root){
-        if(root == null){
+    public int getDepthRec(TreeNode<T> root) {
+        if (root == null) {
             return 0;
         }
         int leftDepth = getDepthRec(root.left);
         int rightDepth = getDepthRec(root.right);
-        return Math.max(leftDepth,rightDepth)+1;
+        return Math.max(leftDepth, rightDepth) + 1;
     }
 
     /**
      * 获取二叉树的深度
+     *
      * @param root
      * @return
      */
-    public int getDepth(TreeNode<T> root){
-        if(root == null){
+    public int getDepth(TreeNode<T> root) {
+        if (root == null) {
             return 0;
         }
         int depth = 0;
@@ -160,18 +162,18 @@ public class BinaryTree<T> {
         int nextLevel = 0;
         LinkedList<TreeNode> treeNodeLinkedList = new LinkedList<>();
         treeNodeLinkedList.add(root);
-        while(!treeNodeLinkedList.isEmpty()){
+        while (!treeNodeLinkedList.isEmpty()) {
             TreeNode treeNode = treeNodeLinkedList.remove();
             currentLevel--;
-            if(treeNode.left != null){
+            if (treeNode.left != null) {
                 treeNodeLinkedList.add(treeNode.left);
                 nextLevel++;
             }
-            if(treeNode.right != null){
+            if (treeNode.right != null) {
                 treeNodeLinkedList.add(treeNode.right);
                 nextLevel++;
             }
-            if(currentLevel == 0){
+            if (currentLevel == 0) {
                 depth++;
                 currentLevel = nextLevel;
                 nextLevel = 0;
@@ -216,8 +218,8 @@ public class BinaryTree<T> {
 
         TreeNode<Integer> root = binaryTree.createBinaryPre(tree);
         System.out.println("获取二叉树深度");
-        System.out.println("递归获取 ： "+ binaryTree.getDepthRec(root));
-        System.out.println("非递归获取 ： "+ binaryTree.getDepth(root));
+        System.out.println("递归获取 ： " + binaryTree.getDepthRec(root));
+        System.out.println("非递归获取 ： " + binaryTree.getDepth(root));
 
         //先序遍历（递归）
         System.out.println("先序遍历");

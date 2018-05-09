@@ -7,8 +7,17 @@ package com.hecc.lib.algorithm;
  */
 public class TreeNode<T> {
 
+    /**
+     * 元数据
+     */
     public T data;
+    /**
+     * 左节点数据
+     */
     public TreeNode<T> left;
+    /**
+     * 右节点数据
+     */
     public TreeNode<T> right;
 
     /**

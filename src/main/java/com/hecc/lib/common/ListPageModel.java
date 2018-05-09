@@ -10,18 +10,46 @@ import java.util.List;
  */
 public class ListPageModel {
 
-    private int page = 1; // 当前页
-    public int totalPages = 0; // 总页数
-    private int pageRecorders;// 每页多少条数据
-    private int totalRows = 0; // 总数据数
-    private int pageStartRow = 0;// 每页的起始数
-    private int pageEndRow = 0; // 每页显示数据的终止数
-    private boolean hasNextPage = false; // 是否有下一页
-    private boolean hasPreviousPage = false; // 是否有前一页
+    /**
+     * 当前页
+     */
+    private int page = 1;
+    /**
+     * 总页数
+     */
+    public int totalPages = 0;
+    /**
+     * 每页多少条数据
+     */
+    private int pageRecorders;
+    /**
+     * 总数据数
+     */
+    private int totalRows = 0;
+    /**
+     * 每页的起始数
+     */
+    private int pageStartRow = 0;
+    /**
+     * 每页显示数据的终止数
+     */
+    private int pageEndRow = 0;
+    /**
+     * 是否有下一页
+     */
+    private boolean hasNextPage = false;
+    /**
+     * 是否有前一页
+     */
+    private boolean hasPreviousPage = false;
+    /**
+     * 列表
+     */
     private List list;
 
     /**
      * 通过对象集，记录总数划分
+     *
      * @param list
      * @param pageRecorders
      */
@@ -31,6 +59,7 @@ public class ListPageModel {
 
     /**
      * 初始化list
+     *
      * @param list
      * @param pageRecorders
      */
@@ -84,13 +113,14 @@ public class ListPageModel {
 
     /**
      * 获取第几页的内容
+     *
      * @param page
      * @return
      */
     public List getObjects(int page) {
-        if (page == 0){
+        if (page == 0) {
             this.setPage(1);
-        } else{
+        } else {
             this.setPage(page);
         }
         this.disposePage();
@@ -191,13 +221,13 @@ public class ListPageModel {
 
     public static void main(String args[]) {
         List<String> list = new ArrayList<String>();
-        for(int i= 1;i<15;i++){
-            list.add(i+"");
+        for (int i = 1; i < 15; i++) {
+            list.add(i + "");
         }
         ListPageModel pm = new ListPageModel(list, 10);
 
         List sublist = pm.getObjects(2);
-        for(int i = 0; i < sublist.size(); i++) {
+        for (int i = 0; i < sublist.size(); i++) {
             System.out.println(sublist.get(i));
         }
         System.out.println(sublist.get(0));
