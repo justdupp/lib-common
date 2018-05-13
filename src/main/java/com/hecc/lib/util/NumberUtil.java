@@ -1,6 +1,6 @@
 package com.hecc.lib.util;
 
-import com.taobao.api.internal.util.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
