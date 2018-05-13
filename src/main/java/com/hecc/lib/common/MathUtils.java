@@ -45,7 +45,24 @@ public class MathUtils {
         }
     }
 
+    /**
+     * 两个整数的最大公因数， 同时整除两者的最大整数
+     *
+     * @param m 整数1
+     * @param n 整数2
+     * @return 最大公因数
+     */
+    public static long grc(long m, long n) {
+        while (n != 0) {
+            long rem = m % n;
+            m = n;
+            n = rem;
+        }
+        return m;
+    }
+
     public static void main(String[] args) {
-        System.out.println(isEven(11));
+       // System.out.println(isEven(11));
+        System.out.println(grc(50,15));
     }
 }
