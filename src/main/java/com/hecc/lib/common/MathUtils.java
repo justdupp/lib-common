@@ -1,5 +1,7 @@
 package com.hecc.lib.common;
 
+import java.util.function.IntPredicate;
+
 /**
  * @author xuhoujun
  * @description: 数学算法工具类
@@ -61,8 +63,18 @@ public class MathUtils {
         return m;
     }
 
+    /**
+     * 判断是否偶数
+     * @param n 需要判断的数
+     * @return
+     */
+    public static boolean evenInt(int n) {
+        IntPredicate isEven = (int i) -> i % 2 == 0;
+        return isEven.test(n);
+    }
+
     public static void main(String[] args) {
-       // System.out.println(isEven(11));
-        System.out.println(grc(50,15));
+         System.out.println(evenInt(10));
+        //System.out.println(grc(50, 15));
     }
 }
