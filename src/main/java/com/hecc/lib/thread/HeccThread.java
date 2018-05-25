@@ -25,8 +25,24 @@ public class HeccThread extends Thread {
     public HeccThread(Runnable runnable, String name) {
         super(runnable, name + "-" + created.incrementAndGet());
         setUncaughtExceptionHandler(
-                (t, e) -> logger.info(String.format("uncaught in thread:s%,s% " + t.getName(), e))
+                (t, e) -> logger.info(String.format("uncaught in thread: %s,%s " + t.getName(), e))
         );
+    }
+
+    public static int getThreadCreated() {
+        return created.get();
+    }
+
+    public static int getThreadAlive() {
+        return alive.get();
+    }
+
+    public static boolean getDebug() {
+        return debugLifeCycle;
+    }
+
+    public static void setDebug(boolean debug) {
+        debugLifeCycle = debug;
     }
 
     @Override
@@ -44,22 +60,6 @@ public class HeccThread extends Thread {
                 logger.info("exiting:" + getName());
             }
         }
-    }
-
-    public static int getThreadCreated() {
-        return created.get();
-    }
-
-    public static int getThreadAlive() {
-        return alive.get();
-    }
-
-    public static boolean getDebug() {
-        return debugLifeCycle;
-    }
-
-    public static void setDebug(boolean debug) {
-        debugLifeCycle = debug;
     }
 
 }
