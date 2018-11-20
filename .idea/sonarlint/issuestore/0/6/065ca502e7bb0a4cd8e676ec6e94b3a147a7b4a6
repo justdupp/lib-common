@@ -1,0 +1,16 @@
+
+fsquid:S2259"LA "NullPointerException" could be thrown; "getClassValue()" can return null.(ëàýáýÿÿÿÿ
+Osquid:S1141"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(þÝ²öýÿÿÿÿ
+]squid:S1182"HUse super.clone() to create and seed the cloned instance to be returned.(¯áÑë
+}squid:S1157"cReplace these toUpperCase()/toLowerCase() and equals() calls with a single equalsIgnoreCase() call.(ø†‘ˆýÿÿÿÿ
+m
+squid:S135"YReduce the total number of break and continue statements in this loop to use at most one.(Ü×Ô¨
+asquid:S2259"LA "NullPointerException" could be thrown; "getClassValue()" can return null.(Ÿ¶Á›
+wsquid:S1157"cReplace these toUpperCase()/toLowerCase() and equals() calls with a single equalsIgnoreCase() call.(Áž¼
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(Öê«°ûÿÿÿÿ
+5squid:S3878"Remove this array creation.(ãÛš¥øÿÿÿÿ
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(Í‹¿Éýÿÿÿÿ

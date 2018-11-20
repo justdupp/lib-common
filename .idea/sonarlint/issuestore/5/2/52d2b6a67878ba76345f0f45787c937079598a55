@@ -1,0 +1,17 @@
+
+bsquid:S3027"FPut single-quotes around '.' to use the faster "indexOf(char)" method.(…¡ï8Û¯„ŸÚ,
+osquid:S1192"SDefine a constant instead of duplicating this literal "æ•°å­—è½¬åŒ–é”™è¯¯" 3 times.(Ğ™®Î8Û¯„ŸÚ,
+isquid:S2153"HRemove the boxing to "Double"; The argument is already of the same type.(÷©ù³øÿÿÿÿ8Û¯„ŸÚ,
+bsquid:S2153"FRemove the boxing to "Long"; The argument is already of the same type.(²õÆ°8Û¯„ŸÚ,
+bsquid:S2153"FRemove the boxing to "Long"; The argument is already of the same type.(ÏñÈÌ8Û¯„ŸÚ,
+isquid:S2153"HRemove the boxing to "Double"; The argument is already of the same type.(÷©ù³øÿÿÿÿ8Û¯„ŸÚ,
+bsquid:S2153"FRemove the boxing to "Long"; The argument is already of the same type.(ÏñÈÌ8Û¯„ŸÚ,
+bsquid:S2153"FRemove the boxing to "Long"; The argument is already of the same type.(ÏñÈÌ8Û¯„ŸÚ,
+esquid:S2153"IRemove the boxing to "Integer"; The argument is already of the same type.(Âİ‡Ü8Û¯„ŸÚ,
+esquid:S2153"IRemove the boxing to "Integer"; The argument is already of the same type.(Âİ‡Ü8Û¯„ŸÚ,
+isquid:S2153"HRemove the boxing to "Double"; The argument is already of the same type.(÷©ù³øÿÿÿÿ8Û¯„ŸÚ,
+bsquid:S3027"FPut single-quotes around '.' to use the faster "indexOf(char)" method.(…¡ï8Û¯„ŸÚ,
+esquid:S2153"IRemove the boxing to "Integer"; The argument is already of the same type.(Âİ‡Ü8Û¯„ŸÚ,
+9squid:S1118"Hide this public constructor.(¯ØÍ8Û¯„ŸÚ,
+squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¯ØÍ8Û¯„ŸÚ,
+bsquid:S2153"FRemove the boxing to "Long"; The argument is already of the same type.(Ãé“¿8Û¯„ŸÚ,

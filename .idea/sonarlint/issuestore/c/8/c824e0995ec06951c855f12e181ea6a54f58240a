@@ -1,0 +1,9 @@
+
+^squid:UnusedPrivateMethod"6Remove this unused private "getNextWorkingDay" method.(ÿ¬Õ„øÿÿÿÿ
+vsquid:S1488"aImmediately return this expression instead of assigning it to the temporary variable "localDate".(«¿ëÄ
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+^squid:UnusedPrivateMethod"6Remove this unused private "getNextWorkingDay" method.(¬Þ“¦úÿÿÿÿ
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(©É‹Éÿÿÿÿÿ
+=squid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+R
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ó•±ªþÿÿÿÿ

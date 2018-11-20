@@ -1,0 +1,5 @@
+
+Lsquid:S2629"7Use the built-in formatting to construct this argument.(ûÖÐà
+@squid:S1068"+Remove this unused "stopped" private field.( Ý²¿
+Vsquid:S3457"AFormat specifiers should be used instead of string concatenation.(ûÖÐà
+9squid:S3010"$Remove this assignment of "stopped".(ª“’­
