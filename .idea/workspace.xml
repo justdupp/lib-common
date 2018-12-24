@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c935c520-eae9-411d-9976-334032ca3755" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/hecc/lib/design/Emperor.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/hecc/lib/design/MInister.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/hecc/lib/util/CoinChange.java" afterPath="$PROJECT_DIR$/src/main/java/com/hecc/lib/util/CoinChange.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -83,8 +82,8 @@
       <file leaf-file-name="CoinChange.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/hecc/lib/util/CoinChange.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+            <state relative-caret-position="435">
+              <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -93,9 +92,56 @@
       <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-              <folding />
+            <state relative-caret-position="135">
+              <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+              <folding>
+                <marker date="1545641764762" expanded="true" signature="79029:79071" ph="..." />
+                <marker date="1545641764762" expanded="true" signature="79029:79089" ph="..." />
+                <marker date="1545641764762" expanded="true" signature="79029:79102" ph="..." />
+                <marker date="1545641764762" expanded="true" signature="79029:79117" ph="..." />
+                <marker date="1545641764762" expanded="true" signature="79152:82031" ph="..." />
+                <marker date="1545641764762" expanded="true" signature="79165:82016" ph="..." />
+                <marker date="1545641764762" expanded="true" signature="79219:79514" ph="..." />
+                <marker date="1545641764762" expanded="true" signature="79238:79499" ph="..." />
+                <marker date="1545641764762" expanded="true" signature="79301:79479" ph="..." />
+                <marker date="1545641764762" expanded="true" signature="79341:79445" ph="..." />
+                <marker date="1545641764762" expanded="true" signature="79362:79423" ph="..." />
+                <marker date="1545641764762" expanded="true" signature="79564:79891" ph="..." />
+                <marker date="1545641764762" expanded="true" signature="79583:79876" ph="..." />
+                <marker date="1545641764762" expanded="true" signature="79678:79856" ph="..." />
+                <marker date="1545641764762" expanded="true" signature="79718:79822" ph="..." />
+                <marker date="1545641764762" expanded="true" signature="79739:79800" ph="..." />
+                <marker date="1545641764762" expanded="true" signature="79942:80207" ph="..." />
+                <marker date="1545641764762" expanded="true" signature="79961:80192" ph="..." />
+                <marker date="1545641764762" expanded="true" signature="79994:80172" ph="..." />
+                <marker date="1545641764762" expanded="true" signature="80034:80138" ph="..." />
+                <marker date="1545641764762" expanded="true" signature="80055:80116" ph="..." />
+                <marker date="1545641764762" expanded="true" signature="80250:80556" ph="..." />
+                <marker date="1545641764762" expanded="true" signature="80269:80541" ph="..." />
+                <marker date="1545641764762" expanded="true" signature="80343:80521" ph="..." />
+                <marker date="1545641764762" expanded="true" signature="80383:80487" ph="..." />
+                <marker date="1545641764762" expanded="true" signature="80404:80465" ph="..." />
+                <marker date="1545641764762" expanded="true" signature="80607:80959" ph="..." />
+                <marker date="1545641764762" expanded="true" signature="80626:80944" ph="..." />
+                <marker date="1545641764762" expanded="true" signature="80707:80924" ph="..." />
+                <marker date="1545641764762" expanded="true" signature="80747:80890" ph="..." />
+                <marker date="1545641764762" expanded="true" signature="80768:80868" ph="..." />
+                <marker date="1545641764762" expanded="true" signature="80994:81300" ph="..." />
+                <marker date="1545641764762" expanded="true" signature="81013:81285" ph="..." />
+                <marker date="1545641764762" expanded="true" signature="81087:81265" ph="..." />
+                <marker date="1545641764762" expanded="true" signature="81127:81231" ph="..." />
+                <marker date="1545641764762" expanded="true" signature="81148:81209" ph="..." />
+                <marker date="1545641764762" expanded="true" signature="81352:81689" ph="..." />
+                <marker date="1545641764762" expanded="true" signature="81371:81674" ph="..." />
+                <marker date="1545641764762" expanded="true" signature="81476:81654" ph="..." />
+                <marker date="1545641764762" expanded="true" signature="81516:81620" ph="..." />
+                <marker date="1545641764762" expanded="true" signature="81537:81598" ph="..." />
+                <marker date="1545641764762" expanded="true" signature="81737:82002" ph="..." />
+                <marker date="1545641764762" expanded="true" signature="81756:81987" ph="..." />
+                <marker date="1545641764762" expanded="true" signature="81789:81967" ph="..." />
+                <marker date="1545641764762" expanded="true" signature="81829:81933" ph="..." />
+                <marker date="1545641764762" expanded="true" signature="81850:81911" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -157,7 +203,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/hecc/lib/thread/TimingThreadPool.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hecc/lib/thread/HeccThreadFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hecc/lib/thread/HeccThread.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/hecc/lib/util/CoinChange.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hecc/lib/exception/HeccException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hecc/lib/service/HeccExceptionConstants.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hecc/lib/service/BindValid.java" />
@@ -169,6 +214,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/hecc/lib/design/Emperor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/hecc/lib/design/MInister.java" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/hecc/lib/util/CoinChange.java" />
       </list>
     </option>
   </component>
@@ -1072,15 +1118,16 @@
       <workItem from="1541667652042" duration="6866000" />
       <workItem from="1542717682156" duration="664000" />
       <workItem from="1543562811387" duration="817000" />
-      <workItem from="1545640693691" duration="732000" />
+      <workItem from="1545640693691" duration="834000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57709000" />
+    <option name="totallyTimeSpent" value="57811000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="-257" width="1920" height="1057" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1096,7 +1143,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2087327" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2087327" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1402,14 +1449,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/hecc/lib/util/CoinChange.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/hecc/lib/design/MInister.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -1420,9 +1459,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-          <folding />
+        <state relative-caret-position="135">
+          <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+          <folding>
+            <marker date="1545641764762" expanded="true" signature="79029:79071" ph="..." />
+            <marker date="1545641764762" expanded="true" signature="79029:79089" ph="..." />
+            <marker date="1545641764762" expanded="true" signature="79029:79102" ph="..." />
+            <marker date="1545641764762" expanded="true" signature="79029:79117" ph="..." />
+            <marker date="1545641764762" expanded="true" signature="79152:82031" ph="..." />
+            <marker date="1545641764762" expanded="true" signature="79165:82016" ph="..." />
+            <marker date="1545641764762" expanded="true" signature="79219:79514" ph="..." />
+            <marker date="1545641764762" expanded="true" signature="79238:79499" ph="..." />
+            <marker date="1545641764762" expanded="true" signature="79301:79479" ph="..." />
+            <marker date="1545641764762" expanded="true" signature="79341:79445" ph="..." />
+            <marker date="1545641764762" expanded="true" signature="79362:79423" ph="..." />
+            <marker date="1545641764762" expanded="true" signature="79564:79891" ph="..." />
+            <marker date="1545641764762" expanded="true" signature="79583:79876" ph="..." />
+            <marker date="1545641764762" expanded="true" signature="79678:79856" ph="..." />
+            <marker date="1545641764762" expanded="true" signature="79718:79822" ph="..." />
+            <marker date="1545641764762" expanded="true" signature="79739:79800" ph="..." />
+            <marker date="1545641764762" expanded="true" signature="79942:80207" ph="..." />
+            <marker date="1545641764762" expanded="true" signature="79961:80192" ph="..." />
+            <marker date="1545641764762" expanded="true" signature="79994:80172" ph="..." />
+            <marker date="1545641764762" expanded="true" signature="80034:80138" ph="..." />
+            <marker date="1545641764762" expanded="true" signature="80055:80116" ph="..." />
+            <marker date="1545641764762" expanded="true" signature="80250:80556" ph="..." />
+            <marker date="1545641764762" expanded="true" signature="80269:80541" ph="..." />
+            <marker date="1545641764762" expanded="true" signature="80343:80521" ph="..." />
+            <marker date="1545641764762" expanded="true" signature="80383:80487" ph="..." />
+            <marker date="1545641764762" expanded="true" signature="80404:80465" ph="..." />
+            <marker date="1545641764762" expanded="true" signature="80607:80959" ph="..." />
+            <marker date="1545641764762" expanded="true" signature="80626:80944" ph="..." />
+            <marker date="1545641764762" expanded="true" signature="80707:80924" ph="..." />
+            <marker date="1545641764762" expanded="true" signature="80747:80890" ph="..." />
+            <marker date="1545641764762" expanded="true" signature="80768:80868" ph="..." />
+            <marker date="1545641764762" expanded="true" signature="80994:81300" ph="..." />
+            <marker date="1545641764762" expanded="true" signature="81013:81285" ph="..." />
+            <marker date="1545641764762" expanded="true" signature="81087:81265" ph="..." />
+            <marker date="1545641764762" expanded="true" signature="81127:81231" ph="..." />
+            <marker date="1545641764762" expanded="true" signature="81148:81209" ph="..." />
+            <marker date="1545641764762" expanded="true" signature="81352:81689" ph="..." />
+            <marker date="1545641764762" expanded="true" signature="81371:81674" ph="..." />
+            <marker date="1545641764762" expanded="true" signature="81476:81654" ph="..." />
+            <marker date="1545641764762" expanded="true" signature="81516:81620" ph="..." />
+            <marker date="1545641764762" expanded="true" signature="81537:81598" ph="..." />
+            <marker date="1545641764762" expanded="true" signature="81737:82002" ph="..." />
+            <marker date="1545641764762" expanded="true" signature="81756:81987" ph="..." />
+            <marker date="1545641764762" expanded="true" signature="81789:81967" ph="..." />
+            <marker date="1545641764762" expanded="true" signature="81829:81933" ph="..." />
+            <marker date="1545641764762" expanded="true" signature="81850:81911" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1430,6 +1516,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="16" column="6" lean-forward="false" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/hecc/lib/util/CoinChange.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
         </state>
       </provider>
