@@ -1,10 +1,10 @@
 
-Ksquid:S1066"/Merge this if statement with the enclosing one.(ÔÒýÍ8ò›¥•ï,
-ssquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 38 to the 15 allowed.(Í‚”çûÿÿÿÿ8¦ãÜ•ï,
-Dsquid:S1148"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8„Ø”•ï,
-Ksquid:S1066"/Merge this if statement with the enclosing one.(âÙ§™8¦ãÜ•ï,
-[squid:S1118":Add a private constructor to hide the implicit public one.(áŒ½âùÿÿÿÿ8ãú™•ï,
-Ksquid:S1066"/Merge this if statement with the enclosing one.(œ¸¡ï8¦ãÜ•ï,
-`squid:S2583"DChange this condition so that it does not always evaluate to "false"(ÔÒýÍ8ò›¥•ï,
-Ssquid:S2589"7Remove this expression which always evaluates to "true"(½«¨€8¦ãÜ•ï,
-tsquid:S1450"XRemove the "bindValid" field and declare it as a local variable in the relevant methods.(„„°‚8ó¹™•ï,
+usquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 38 to the 15 allowed.(Í‚”çûÿÿÿÿ8¦ãÜ•ï,
+vsquid:S1450"XRemove the "bindValid" field and declare it as a local variable in the relevant methods.(„„°‚8ó¹™•ï,
+Msquid:S1066d"/Merge this if statement with the enclosing one.(œ¸¡ï8¦ãÜ•ï,
+bsquid:S2583*"DChange this condition so that it does not always evaluate to "false"(ÔÒýÍ8ò›¥•ï,
+Fsquid:S1148""#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8„Ø”•ï,
+]squid:S1118":Add a private constructor to hide the implicit public one.(áŒ½âùÿÿÿÿ8ãú™•ï,
+Usquid:S25894"7Remove this expression which always evaluates to "true"(½«¨€8¦ãÜ•ï,
+Msquid:S10660"/Merge this if statement with the enclosing one.(âÙ§™8¦ãÜ•ï,
+Msquid:S1066*"/Merge this if statement with the enclosing one.(ÔÒýÍ8ò›¥•ï,

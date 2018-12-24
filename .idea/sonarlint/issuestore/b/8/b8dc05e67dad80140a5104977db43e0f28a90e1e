@@ -1,5 +1,6 @@
 
-Asquid:S1165" Make this "resCode" field final.(¹üµıÿÿÿÿ8çî°•ï,
-8squid:S1165"Make this "msg" field final.(­îøï8çî°•ï,
-Bsquid:S1948"&Make "data" transient or serializable.(¼éñ8çî°•ï,
-9squid:S1165"Make this "data" field final.(¼éñ8çî°•ï,
+Dsquid:S1948"&Make "data" transient or serializable.(¼éñ8çî°•ï,
+:squid:S1165
+"Make this "msg" field final.(­îøï8çî°•ï,
+;squid:S1165"Make this "data" field final.(¼éñ8çî°•ï,
+Csquid:S1165	" Make this "resCode" field final.(¹üµıÿÿÿÿ8çî°•ï,
