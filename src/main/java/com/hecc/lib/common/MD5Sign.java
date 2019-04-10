@@ -11,7 +11,7 @@ public class MD5Sign {
     /**
      * 获取MD5签名
      *
-     * @return
+     * @return md5加密字符串
      */
     public static String getMD5Sign(String ciphertext) {
 

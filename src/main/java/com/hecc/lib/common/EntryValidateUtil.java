@@ -10,7 +10,7 @@ import java.util.List;
 
 /**
  * @author xuhoujun
- * @description:
+ * @description: 校验工具类
  * @date: Created In 4:47 PM on 2019/4/10.
  */
 public class EntryValidateUtil<T> {
@@ -68,7 +68,7 @@ public class EntryValidateUtil<T> {
         }
     }
 
-    static class TestEntry{
+    static class TestEntry {
         @EntryValidate
         private String name;
         @EntryValidate
@@ -128,7 +128,7 @@ public class EntryValidateUtil<T> {
         entryParams.setaName("hgjbn");
         entryParams.setzSex("iuk");
         EntryValidateUtil<TestEntry> entryValidateUtil = new EntryValidateUtil(TestEntry.class);
-        if(entryValidateUtil.validate(entryParams,"844C7999EBC6CE132D44AE32D4DBB0CA")){
+        if (entryValidateUtil.validate(entryParams, "844C7999EBC6CE132D44AE32D4DBB0CA")) {
             System.out.println("验证通过");
         }
     }
