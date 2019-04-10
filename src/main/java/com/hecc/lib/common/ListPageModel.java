@@ -25,7 +25,7 @@ public class ListPageModel {
     /**
      * 总数据数
      */
-    private int totalRows = 0;
+    private int totalRows = 0;    
     /**
      * 每页的起始数
      */
